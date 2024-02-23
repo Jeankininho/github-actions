@@ -7,14 +7,10 @@ on:
     paths-ignore:
       - '.github/workflows/**'
 
-  workflow_dispatch:
-  
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      -name: "teste"
+      - name: "teste"
         run: |
           echo "OI"
-
-         
