@@ -3,9 +3,9 @@ name: 'Production - https://api.tunad.io'
 on:
   push:
     branches: 
-      - 'master'
-    paths-ignore:
-      - '.github/workflows/**'
+      - 'main'
+
+  workflow_dispatch: 
 
 jobs:
   build:
