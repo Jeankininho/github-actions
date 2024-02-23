@@ -1,0 +1,15 @@
+name: "teste do kino"
+
+on:
+  push: 
+    branch:
+      - main
+  workflow_dispatch:
+
+  
+jobs:
+  test:
+      runs-on: ubuntu-latest
+      steps:
+        -name: "teste"
+         run: echo "OI"
