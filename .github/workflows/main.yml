@@ -1,15 +1,20 @@
-name: "teste do kino"
+name: 'Production - https://api.tunad.io'
 
 on:
-  push: 
-    branch:
-      - main
-  workflow_dispatch:
+  push:
+    branches: 
+      - 'master'
+    paths-ignore:
+      - '.github/workflows/**'
 
+  workflow_dispatch:
   
 jobs:
-  test:
-      runs-on: ubuntu-latest
-      steps:
-        -name: "teste"
-         run: echo "OI"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      -name: "teste"
+        run: |
+          echo "OI"
+
+         
